@@ -1,2 +1,5 @@
 node_modules/
+# Prisma generated client
+src/generated/prisma/
+
 .env
