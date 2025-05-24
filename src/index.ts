@@ -1,12 +1,15 @@
-import Express, {Request, Response} from 'express';
+import express, { Request, Response } from "express";
+import { postRoutes } from "./routes/postRoutes";
 
-const app = Express();
+const app = express();
 const port = 3000;
 
-app.get('/api', (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World!");
+});
+
+app.use("/api", postRoutes);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}`);
+});
