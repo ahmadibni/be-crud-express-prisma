@@ -13,8 +13,11 @@
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
     "@prisma/client": "6.8.2",
+    "@types/body-parser": "^1.19.5",
+    "body-parser": "^2.2.0",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "zod": "^3.25.28"
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
